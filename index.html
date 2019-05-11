@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Travel Form</title>
+</head>
+<body>
+    <header><h1>Travel Authorisation Form</h1></header>
+    <form action="/formResponse" method="GET">
+        <section class="personal-Information">
+            <h1>Client Information</h1>
+            <hr>
+            Title:          <input type="text" name="title"> <br>
+            First Name:     <input type="text" name="first_name"> <br>
+            Middle Name:    <input type="text" name="middle_name"> <br>
+            Surname:        <input type="text" name="last_name"> <br>
+            E-mail:         <input type="email" name="email"> <br>
+            Contact Number: <input type="text" name="number"> <br>
+        </section>
+        <section class="travel-Information">
+            <h1>Travel Information</h1>
+            <hr>
+            Airline: <select name="airline">
+                <option value="saa">SAA</option>
+                <option value="kulula">Kulula</option>
+                <option value="mango">Mango</option>
+                <option value="etihad">Etihad Airline</option>
+                <option value="emirates">Emirates Airlines</option>
+            </select><br>
+            Destination: <input type="text" name="destination"><br>
+            Departure:   <input type="date" name="departure"><br>
+            Return:      <input type="date" name="return"><br>
+            Estimated Cost: <input type="text" name="cost"><br>
+
+            Includes customer visit: <input type="checkbox" name="visit"><br>
+        </section>
+        <section class="payment-section">
+            <h1>Payment Uses</h1>
+            <hr>
+            Payment Method Used: <br>
+            <input type="radio" name="pmu" value="cash">Cash<br>
+            <input type="radio" name="pmu" value="credit card">Credit Card<br>
+            <input type="radio" name="pmu" value="cheque">Cheque<br>
+            <br>
+            <br> 
+            Purpose of Visit: <input type="text" name="purpose"><br>
+            <input type="submit" value="Submit" class="btn">
+        </section>
+    </form>
+</body>
+</html>
